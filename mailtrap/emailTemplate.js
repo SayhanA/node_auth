@@ -101,7 +101,7 @@ export const passwordResetRequestTemplage = `<!DOCTYPE html>
     <p>Hello {{name}},</p>
     <p>We received a request to reset your password. If you made this request, please click the button below to reset your password:</p>
 
-    <a href="{{reset_link}}" class="btn">Reset Password</a>
+    <a href="{reset_link}" class="btn">Reset Password</a>
 
     <p>If you did not request a password reset, you can safely ignore this email—your password will not be changed.</p>
 

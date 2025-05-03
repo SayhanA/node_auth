@@ -1,4 +1,5 @@
 import {
+  passwordResetRequestTemplage,
   passwordResetSuccessTemplage,
   verificationEmailTemplage,
 } from "./emailTemplate.js";
@@ -57,6 +58,7 @@ export const sendPasswordResetEmail = async (email, url) => {
       html: passwordResetRequestTemplage.replace("{reset_link}", url),
       category: "Password reset",
     });
+    console.log('Send password reset email:', response);
   } catch (error) {
     console.log("Error to sending password reset email:", error);
     throw new Error(`Error sending password reset email: ${error}`);
